@@ -6,7 +6,7 @@ public class Global{
     private static int[][] matriz100x5 = new int[100][5];
     private static Random random = new Random();
 
-    //Metodo de Criação Inicial Matriz 100x5 
+    //Metodo de Criação Inicial Matriz 100x5
 
     public static Boolean criarMatrizPreenchida100x5() {
 
@@ -27,7 +27,7 @@ public class Global{
 
         //Teste da matriz 100x5 preenchida - So descomentar abaixo;
 
-        //imprimirMatrix(matriz100x5);
+        //imprimirMatriz(matriz100x5);
 
         return true;
     }
@@ -79,11 +79,9 @@ public class Global{
                     matriz10x5[i][CamposMatriz.DADO_D] += 1;
                     matriz10x5[i][CamposMatriz.BIT_DE_MODIFICACAO_M] = 1;
                 }
-                
                 return true;
             }else{
                 //Instrução não carregada na memoria  //ATENÇÃO // Aqui tenho que colocar os algoritmos de substituição //OK NRU, FIFO, FIFO-SC, RELÓGIO
-
             }
         }
         return null;
@@ -99,7 +97,7 @@ public class Global{
     }
 
     //Impressão de Matrizes Generica.
-    public static void imprimirMatrix(int[][] matriz) {
+    public static void imprimirMatriz(int[][] matriz) {
         for(int k = 0; k< matriz.length; k++){
             System.out.println(matriz[k][CamposMatriz.NUMERO_DE_PAGINA_N] + " ° " + matriz[k][CamposMatriz.INSTRUCAO_I] + " ° "+ matriz[k][CamposMatriz.DADO_D] + " ° " + matriz[k][CamposMatriz.BIT_DE_MODIFICACAO_M] + " ° " + matriz[k][CamposMatriz.BIT_DE_ACESSO_R]);
         }
