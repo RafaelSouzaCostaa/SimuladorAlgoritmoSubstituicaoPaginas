@@ -8,7 +8,7 @@ public class Global{
 
     //Metodo de Criação Inicial Matriz 100x5 
 
-    public static void criarMatrizPreenchida100x5() {
+    public static Boolean criarMatrizPreenchida100x5() {
 
         int n = 0;
         int i = 1;
@@ -25,11 +25,11 @@ public class Global{
         }
 
 
-        //Teste da matriz 100x5 preenchida - So descomentar o for abaixo;
+        //Teste da matriz 100x5 preenchida - So descomentar abaixo;
 
-        /*for(int k = 0; k<100; k++){
-            System.out.println(matriz100x5[k][CamposMatriz.NUMERO_DE_PAGINA_N] + " ° " + matriz100x5[k][CamposMatriz.INSTRUCAO_I] + " ° "+ matriz100x5[k][CamposMatriz.DADO_D] + " ° " + matriz100x5[k][CamposMatriz.BIT_DE_MODIFICACAO_M] + " ° " + matriz100x5[k][CamposMatriz.BIT_DE_ACESSO_R]);
-        }*/
+        //imprimirMatrix(matriz100x5);
+
+        return true;
     }
 
     //Preenchendo matriz 10x5 com valores sorteados apartir da 100x5
@@ -70,7 +70,7 @@ public class Global{
 
     public static Boolean startSimulador() {
         int numeroInstrucao = random.nextInt(100)+1;
-
+    
         for(int i = 0; i < 10; i++){
             if(matriz10x5[i][CamposMatriz.INSTRUCAO_I] == numeroInstrucao){
                 
@@ -79,13 +79,29 @@ public class Global{
                     matriz10x5[i][CamposMatriz.DADO_D] += 1;
                     matriz10x5[i][CamposMatriz.BIT_DE_MODIFICACAO_M] = 1;
                 }
+                
                 return true;
             }else{
                 //Instrução não carregada na memoria  //ATENÇÃO // Aqui tenho que colocar os algoritmos de substituição //OK NRU, FIFO, FIFO-SC, RELÓGIO
 
-                return false;
             }
         }
         return null;
+    }
+
+    //Gets Matrizes
+    public static int[][] getMatriz10x5() {
+        return matriz10x5;
+    }
+
+    public static int[][] getMatriz100x5() {
+        return matriz100x5;
+    }
+
+    //Impressão de Matrizes Generica.
+    public static void imprimirMatrix(int[][] matriz) {
+        for(int k = 0; k< matriz.length; k++){
+            System.out.println(matriz[k][CamposMatriz.NUMERO_DE_PAGINA_N] + " ° " + matriz[k][CamposMatriz.INSTRUCAO_I] + " ° "+ matriz[k][CamposMatriz.DADO_D] + " ° " + matriz[k][CamposMatriz.BIT_DE_MODIFICACAO_M] + " ° " + matriz[k][CamposMatriz.BIT_DE_ACESSO_R]);
+        }
     }
 }
