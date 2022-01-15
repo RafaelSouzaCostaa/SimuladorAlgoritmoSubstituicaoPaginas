@@ -7,14 +7,15 @@ public class Main {
         Global.criarMatrizPreenchida100x5();
         Global.preencherMatriz10x5ComSorteoMatriz100x5();
 
-        
-        Global.imprimirMatriz(Global.getMatriz100x5());
-        System.out.println("---------------------------");
-        Global.imprimirMatriz(Global.getMatriz10x5());
-        System.out.println("---------------------------");
-        Global.startSimulador();
+        for(int i = 0; i < 1000; i++) {
+            if(i == 900){
+                Global.startSimulador(AlgoritimosConstantes.FIFO, true);
+            }
 
-        Global.imprimirMatriz(Global.getMatriz100x5());
+            Global.startSimulador(AlgoritimosConstantes.FIFO, false);
+        }
+
+        //Global.imprimirMatriz(Global.getMatriz100x5(), "DISCO 100x5");
 
     }
 }

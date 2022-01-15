@@ -1,4 +1,4 @@
-public class CamposMatriz {
+public class CamposMatrizConstante {
     
     public static int NUMERO_DE_PAGINA_N = 0;
     public static int INSTRUCAO_I = 1;
