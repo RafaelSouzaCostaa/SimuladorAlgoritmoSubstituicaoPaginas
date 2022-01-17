@@ -48,7 +48,7 @@ public class Main {
             Global.startSimulador(AlgoritimosConstantes.FIFO_SC, false);
         }
 
-
+        
 
         System.out.println( "---------------- Algoritomo RELOGIO ------------- \n\n Start");
         
