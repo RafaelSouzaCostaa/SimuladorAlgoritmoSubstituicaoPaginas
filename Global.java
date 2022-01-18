@@ -252,13 +252,13 @@ public class Global{
         }
         //Instrução não carregada(encontrada) na memoria  //ATENÇÃO // Aqui tenho que chamar os metodos de substituição NRU, FIFO, FIFO-SC, RELÓGIO
         if(ativo == true){
-            if(algoritimo == AlgoritimosConstantes.NRU){
+            if(algoritimo == AlgoritmosConstantes.NRU){
                 startAlgoritimoNRU();
-            }else if(algoritimo == AlgoritimosConstantes.FIFO){
+            }else if(algoritimo == AlgoritmosConstantes.FIFO){
                 startAlgoritimoFIFO();
-            }else if(algoritimo == AlgoritimosConstantes.FIFO_SC){
+            }else if(algoritimo == AlgoritmosConstantes.FIFO_SC){
                 startAlgoritimoFIFO_SC();
-            }else if(algoritimo == AlgoritimosConstantes.RELOGIO){
+            }else if(algoritimo == AlgoritmosConstantes.RELOGIO){
                 startAlgoritimoRELOGIO();
             }
         }

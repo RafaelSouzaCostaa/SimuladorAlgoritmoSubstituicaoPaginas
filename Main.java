@@ -8,11 +8,11 @@ public class Main {
 
         for(int i = 0; i < 100; i++) {
             if(i == 99){
-                Global.startSimulador(AlgoritimosConstantes.NRU, true);
+                Global.startSimulador(AlgoritmosConstantes.NRU, true);
                 break;
             }
 
-            Global.startSimulador(AlgoritimosConstantes.NRU, false);
+            Global.startSimulador(AlgoritmosConstantes.NRU, false);
         }
 
 
@@ -25,11 +25,11 @@ public class Main {
 
         for(int i = 0; i < 100; i++) {
             if(i == 99){
-                Global.startSimulador(AlgoritimosConstantes.FIFO, true);
+                Global.startSimulador(AlgoritmosConstantes.FIFO, true);
                 break;
             }
 
-            Global.startSimulador(AlgoritimosConstantes.FIFO, false);
+            Global.startSimulador(AlgoritmosConstantes.FIFO, false);
         }
 
 
@@ -41,11 +41,11 @@ public class Main {
 
         for(int i = 0; i < 100; i++) {
             if(i == 99){
-                Global.startSimulador(AlgoritimosConstantes.FIFO_SC, true);
+                Global.startSimulador(AlgoritmosConstantes.FIFO_SC, true);
                 break;
             }
 
-            Global.startSimulador(AlgoritimosConstantes.FIFO_SC, false);
+            Global.startSimulador(AlgoritmosConstantes.FIFO_SC, false);
         }
 
         
@@ -57,11 +57,11 @@ public class Main {
 
         for(int i = 0; i < 100; i++) {
             if(i == 99){
-                Global.startSimulador(AlgoritimosConstantes.RELOGIO, true);
+                Global.startSimulador(AlgoritmosConstantes.RELOGIO, true);
                 break;
             }
 
-            Global.startSimulador(AlgoritimosConstantes.RELOGIO, false);
+            Global.startSimulador(AlgoritmosConstantes.RELOGIO, false);
         }
     }
 }
