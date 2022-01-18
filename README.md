@@ -1,2 +1,2 @@
-# SimuladorAlgoritimoSubstituicaoPaginas
- Simulador dos Algoritimo de Substituicao de Paginas
+# SimuladorAlgoritmoSubstituicaoPaginas
+ Simulador dos Algoritmo de Substituicao de Paginas DISCO ~ RAM
